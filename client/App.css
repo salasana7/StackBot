@@ -1,0 +1,143 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 10px;
+  font-family: "Cutive Mono", monospace;
+  color: #ff0800;
+  background-color: black;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 4rem;
+  margin-bottom: 0;
+  text-align: center;
+  min-height: 250px;
+}
+#header img {
+  height: 8em;
+  margin-bottom: 1em;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.inputBox {
+  position: relative;
+}
+
+form{
+  width: 12em;
+}
+.inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  font-family: "Cutive Mono", monospace;
+}
+
+.inputBox label {
+  top: -18px;
+  left: 0;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #f40303ec;
+  padding: 6px 13px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: "Cutive Mono", monospace;
+}
+
+select{
+  background-color: transparent;
+  color: white;
+  font-family: "Cutive Mono", monospace;
+  font-size: 12px;
+  width: 16em;
+  padding: 4px 0;
+  text-align-last:center;
+}
+
+#thx{
+  padding-top: 40px;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: normal 16px sans-serif;
+  padding: 35px 50px;
+}
+
+.footer-left p {
+  color: #B31B1B;
+  font-size: 11px;
+  margin: 0;
+  font-family: "Cutive Mono", monospace;
+}
+
+.footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #B31B1B;
+  text-align: center;
+  line-height: 35px;
+  margin: 0px 5px;
+  transition:all .25s;
+}
+
+.footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+.footer-left, .footer-right {
+    text-align: center;
+  }
+.footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+.footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
