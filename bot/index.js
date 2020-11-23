@@ -58,8 +58,8 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.post("/api/email", (req, res, next) => {
   try {
     const { email, host } = req.body;
-    if (!(host in emails)) emails[host] = [email];
-    else emails[host].push(email);
+    if (!(host in emails)) emails[host] = new Set([email]);
+    else emails[host].add(email);
     console.log(emails);
     res.send("success");
   } catch (error) {

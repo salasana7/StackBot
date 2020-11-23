@@ -55,7 +55,6 @@ export default class Form extends React.Component {
               value={this.state.host}
             >
               <option>Please select a host</option>
-              <option>Anyone</option>
               <option>Ben</option>
               <option>Tori</option>
               <option>Finn</option>
@@ -63,7 +62,6 @@ export default class Form extends React.Component {
               <option>Maddie</option>
               <option>Jolie</option>
               <option>Katie</option>
-
             </select>
           </div>
           <button type="submit" onClick={this.handleSubmit}>
