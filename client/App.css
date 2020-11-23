@@ -13,23 +13,34 @@ body {
   margin: 0;
   padding-top: 10px;
   font-family: "Cutive Mono", monospace;
+  font-size: 30px;
   color: #ff0800;
   background-color: black;
 }
 #header {
   display: flex;
   flex-direction: column;
-  margin: 2rem 4rem;
+  margin: 8rem 4rem;
   margin-bottom: 0;
   text-align: center;
   min-height: 250px;
+  height: 400px;
 }
 #header img {
-  height: 8em;
-  margin-bottom: 1em;
+  height: 250px;
+  margin-bottom: 20px;
 }
 
 #container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.box{
+  height: 15em;
+  width: 30em;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -40,12 +51,13 @@ body {
 }
 
 form{
-  width: 12em;
+  width: 400px;
+  font-size: 16px;
 }
 .inputBox input {
   width: 100%;
   padding: 10px 0;
-  font-size: 13px;
+  font-size: 23px;
   color: #fff;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -57,25 +69,25 @@ form{
 }
 
 .inputBox label {
-  top: -18px;
+  top: -30px;
   left: 0;
   color: white;
-  font-size: 12px;
+  font-size: 23px;
   position: absolute;
   letter-spacing: 1px;
   padding: 10px 0;
 }
 
 button {
-  margin-top: 20px;
+  margin-top: 25px;
   border: none;
   outline: none;
   color: white;
   background: #f40303ec;
-  padding: 6px 13px;
+  padding: 8px 15px;
   cursor: pointer;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 22px;
   font-family: "Cutive Mono", monospace;
 }
 
@@ -83,8 +95,8 @@ select{
   background-color: transparent;
   color: white;
   font-family: "Cutive Mono", monospace;
-  font-size: 12px;
-  width: 16em;
+  font-size: 23px;
+  width: 17.5em;
   padding: 4px 0;
   text-align-last:center;
 }
@@ -100,30 +112,30 @@ select{
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  font: normal 16px sans-serif;
   padding: 35px 50px;
 }
 
 .footer-left p {
   color: #B31B1B;
-  font-size: 11px;
+  font-size: 20px;
   margin: 0;
   font-family: "Cutive Mono", monospace;
 }
 
 .footer-right a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 55px;
+  height: 55px;
   background-color: black;
   border-radius: 2px;
-  font-size: 20px;
+  font-size: 44px;
   color: #B31B1B;
   text-align: center;
   line-height: 35px;
   margin: 0px 5px;
   transition:all .25s;
 }
+
 
 .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
