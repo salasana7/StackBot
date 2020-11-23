@@ -4,7 +4,7 @@ const puppeteer = require("puppeteer");
 module.exports.getOH = async () => {
   let launchOptions = {
     // headless: false,
-    // args: ["--window-size=2560,1440"],
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
     // defaultViewport: null,
     // slowMo: 120,
   };
